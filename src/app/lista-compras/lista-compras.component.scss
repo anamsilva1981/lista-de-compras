@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+.container{ //Seleciona o container principal
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px #ccc;
+    padding: 20px 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1{ //Seleciona o título principal
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4b4949;
+}
+
+.add-item-form{ //Seleciona o formulário de adicionar item
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input{ //Seleciona o input
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    font-size: 16px;   
+}
+
+input:focus{ //Seleciona o input quando está em foco
+    outline: none;
+    border-color: #0056b3;
+}
+
+button{ //Seleciona o botão
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover{ //Efeito de hover no botão
+    background-color: #0056b3;
+}
+
+table{  //Seleciona a tabela
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead{  //Seleciona o cabeçalho da tabela
+    background-color: #007bff;
+    color: #fff;
+}
+
+th{
+    background-color: #007bff;
+}
+
+td, th{ //Seleciona todas as células da tabela
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(odd){ //Seleciona linhas ímpares
+    background-color: #f9f9f9;
+}
+
+    tr:nth-child(even){ //Seleciona linhas pares
+    background-color: #e6f7ff;
+}
+
+input[type="checkbox"]{ //Seleciona o checkbox
+    transform: scale(1.2);
+    cursor: pointer;
+}
