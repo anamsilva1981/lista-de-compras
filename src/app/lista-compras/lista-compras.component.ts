@@ -29,4 +29,8 @@ export class ListaComprasComponent {
     console.table(this.lista);
   }
 
+  public riscarItem(itemLista: Item){
+    itemLista.comprado = !itemLista.comprado;
+  }
+  
 }

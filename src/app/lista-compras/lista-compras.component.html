@@ -23,9 +23,19 @@
         <tbody>
 
             <tr *ngFor="let item of lista">
-                <td>{{item.id}}</td>
-                <td>{{item.nome}}</td>
-                <td> <input type="checkbox"/> </td>
+                <td>
+                    <span [ngClass]="{ 'item-riscado': item.comprado }">{{item.id}}</span>
+                </td>
+                <td>
+                    <span [ngClass]="{ 'item-riscado': item.comprado }">{{item.nome}}</span>
+                </td>
+                <td> 
+                    <input 
+                        type="checkbox" 
+                        (click)="riscarItem(item)"
+                        [checked]="item.comprado" 
+                         /> 
+                </td>
             </tr>
         </tbody>
     </table>
